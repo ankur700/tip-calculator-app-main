@@ -1,0 +1,70 @@
+/** fonts loading **/
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+/** set variables **/
+
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-gray-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --light-gray-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0 0% 100%);
+  --base-font-size: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** custom class names **/
+
+.grid {
+  display: grid;
+}
+
+.grid-column {
+  grid-column: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.main {
+  background: var(--light-grayish-cyan);
+  height: 100vh;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem;
+  font-family: "Space Mono", monospace;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: var(--dark-grayish-cyan);
+}
+.card {
+  background: var(--white);
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.left label {
+  color: var(--dark-grayish-cyan);
+}
+
+input {
+  font-size: 24px;
+}
